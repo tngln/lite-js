@@ -12,6 +12,9 @@ type RenFont = {
   tab_width: number
   __family: string
   __cssFont: string
+  get_width: (text: string) => number
+  get_height: () => number
+  set_tab_width: (n: number) => void
 }
 
 type RenColor = { b: number, g: number, r: number, a: number }
@@ -189,6 +192,9 @@ function ren_load_font(filename: string, size: number) {
     tab_width: 0,
     __family: family,
     __cssFont: `${size}px "${family}"`,
+    get_width(text: string) { return ren_get_font_width(font, text) },
+    get_height() { return ren_get_font_height(font) },
+    set_tab_width(n: number) { ren_set_font_tab_width(font, n) },
   }
 
   __ensure_font_metrics(font)
