@@ -1,14 +1,4 @@
-type Core = {
-  init: () => void
-  run: () => void
-  on_error?: (err: unknown) => void
-}
-
-const core: Core = {
-  init() {},
-  run() {},
-}
-
-export type { Core }
-export { core }
+export type { Core, LogItem, ProjectFile } from "./init"
+export { core } from "./init"
+export { core as default } from "./init"
 
