@@ -1,0 +1,71 @@
+{
+    "data": [
+        {
+            "task": "2025-12-30 #1",
+            "from": "orig/lite/data/core/object.lua",
+            "to": "src/data/core/object.ts",
+            "finished": false,
+            "checked": false,
+            "additionalSymbols": {
+                "UNKNOWN": [
+                    "SCALE"
+                ],
+                "orig/lite/data/core/common.lua": [
+                    "common"
+                ]
+            }
+        },
+        {
+            "task": "2026-01-04 #1",
+            "from": "orig/lite/src/renderer.c",
+            "to": "src/platform/renderer.ts",
+            "finished": true,
+            "checked": false,
+            "additionalSymbols": {}
+        },
+        {
+            "task": "2026-01-04 #1",
+            "from": "orig/lite/src/renderer.h",
+            "to": "src/platform/renderer.ts",
+            "finished": true,
+            "checked": false,
+            "additionalSymbols": {}
+        },
+        {
+            "task": "2026-01-04 #2",
+            "from": "orig/lite/src/rencache.c",
+            "to": "src/platform/rencache.ts",
+            "finished": true,
+            "checked": false,
+            "additionalSymbols": {}
+        },
+        {
+            "task": "2026-01-04 #2",
+            "from": "orig/lite/src/rencache.h",
+            "to": "src/platform/rencache.ts",
+            "finished": true,
+            "checked": false,
+            "additionalSymbols": {}
+        },
+        {
+            "task": "2026-01-04 #3",
+            "from": "orig/lite/src/api/system.c",
+            "to": "src/platform/api/system.ts",
+            "finished": true,
+            "checked": false,
+            "additionalSymbols": {
+                "UNKNOWN": [
+                    "filesystem.ts"
+                ]
+            }
+        },
+        {
+            "task": "2026-01-04 #3",
+            "from": "UNKNOWN",
+            "to": "src/platform/filesystem.ts",
+            "finished": true,
+            "checked": false,
+            "additionalSymbols": {}
+        }
+    ]
+}

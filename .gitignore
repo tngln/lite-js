@@ -1,0 +1,4 @@
+
+# orig       // some search agent will ignore this.
+*.ttf
+node_modules

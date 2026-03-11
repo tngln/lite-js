@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lite-js</title>
+    <script>
+        const fonts = {
+            "lite-font": "/data/fonts/font.ttf",
+            "lite-icons": "/data/fonts/icons.ttf",
+            "lite-monospace": "/data/fonts/monospace.ttf",
+        }
+        
+        for (const font in fonts) {
+            const link = document.createElement("link");
+            link.rel = "preload";
+            link.href = fonts[font];
+            link.as = "font";
+            link.type = "font/ttf";
+            link.crossOrigin = "anonymous";
+            document.head.appendChild(link);
+        }
+
+        for (const font in fonts) {
+            const fontFace = document.createElement("style");
+            fontFace.textContent = `@font-face { font-family: "${font}"; src: url("${fonts[font]}") format("truetype"); font-display: swap; }`;
+            document.head.appendChild(fontFace);
+        }
+    </script>
+</head>
+<body>
+    <div id="app"></div>
+    <script type="module" src="./main.ts"></script>
+</body>
+</html>
